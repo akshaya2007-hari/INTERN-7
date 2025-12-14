@@ -9,7 +9,7 @@ from sklearn.metrics import accuracy_score, confusion_matrix, classification_rep
 
 st.set_page_config(page_title="Iris Decision Tree App", layout="wide")
 
-st.title("🌸 Iris Flower Classification using Decision Tree")
+st.title("🌸 Iris Flower Classification App")
 
 # Load dataset
 iris = load_iris()
@@ -88,3 +88,4 @@ if st.button("Predict"):
     sample = [[sepal_length, sepal_width, petal_length, petal_width]]
     pred_class = clf.predict(sample)[0]
     st.success(f"🌼 Predicted Flower: **{iris.target_names[pred_class]}**")
+
